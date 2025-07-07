@@ -1,0 +1,30 @@
+{
+  "name": "res-pipe",
+  "version": "1.0.0",
+  "description": "A ts package to pipe data to response",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "response",
+    "pipe",
+    "data"
+  ],
+  "author": "Samit Kapoor",
+  "license": "MIT",
+  "devDependencies": {},
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=14"
+  }
+}
