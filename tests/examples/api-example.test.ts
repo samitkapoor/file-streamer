@@ -1,6 +1,6 @@
 import httpMocks from 'node-mocks-http';
 import { Request } from 'express';
-import { pipeJsonAsExcel } from '../../src/functions/stream-json';
+import { pipeJsonAsExcel } from '../../src/functions';
 import { Data } from '../../src/types';
 
 describe('Real API Endpoint Examples', () => {

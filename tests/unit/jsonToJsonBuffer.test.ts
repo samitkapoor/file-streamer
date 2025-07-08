@@ -1,6 +1,6 @@
 import httpMocks from 'node-mocks-http';
 import { Request } from 'express';
-import { pipeJsonAsJson } from '../../src/functions/stream-json';
+import { pipeJsonAsJson } from '../../src/functions';
 import { Data } from '../../src/types';
 
 describe('JSON to JSON API Endpoint Tests', () => {

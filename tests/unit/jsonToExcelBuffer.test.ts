@@ -1,6 +1,6 @@
 import httpMocks from 'node-mocks-http';
 import { Request } from 'express';
-import { jsonToExcelBuffer, pipeJsonAsExcel } from '../../src/functions/stream-json';
+import { jsonToExcelBuffer, pipeJsonAsExcel } from '../../src/functions';
 import { Data } from '../../src/types';
 
 describe('JSON to Excel API Endpoint Tests', () => {

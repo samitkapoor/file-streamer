@@ -1,6 +1,6 @@
 import httpMocks from 'node-mocks-http';
 import { Request } from 'express';
-import { pipeJsonAsCsv } from '../../src/functions/stream-json';
+import { pipeJsonAsCsv } from '../../src/functions';
 import { Data } from '../../src/types';
 
 describe('JSON to CSV API Endpoint Tests', () => {
