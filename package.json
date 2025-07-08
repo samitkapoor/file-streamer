@@ -22,9 +22,14 @@
   ],
   "author": "Samit Kapoor",
   "license": "MIT",
-  "devDependencies": {},
-  "peerDependencies": {},
   "engines": {
     "node": ">=14"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3"
   }
 }
