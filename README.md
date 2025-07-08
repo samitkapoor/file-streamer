@@ -23,6 +23,8 @@ npm install file-streamer
 
 ## Usage
 
+## Backend
+
 Here's a basic example of how to use `file-streamer` with Express.js:
 
 ```typescript
@@ -67,6 +69,29 @@ export const downloadRoute = async (req, res) => {
     });
   }
 };
+```
+
+## Frontend
+
+You're probably going to use this for downloading a file onto user's machine, here's the code to handle the streaming response!
+
+```typescript
+<button
+  onClick={async () => {
+    const response = await axios.get('http://localhost:3000/api/download/csv', {
+      responseType: 'blob'
+    });
+
+    const url = window.URL.createObjectURL(response.data);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `file.csv`;
+    a.click();
+  }}
+  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-200"
+>
+  Download JSON AS CSV
+</button>
 ```
 
 ## Features
