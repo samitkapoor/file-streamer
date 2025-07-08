@@ -12,7 +12,7 @@
     "dev": "ts-node src/index.ts",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "typescript",
@@ -26,10 +26,15 @@
     "node": ">=14"
   },
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "exceljs": "^4.4.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.3"
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.4",
+    "node-mocks-http": "^1.17.2",
+    "ts-jest": "^29.4.0"
   }
 }
