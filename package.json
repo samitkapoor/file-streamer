@@ -1,7 +1,7 @@
 {
-  "name": "res-pipe",
+  "name": "file-streamer",
   "version": "1.0.0",
-  "description": "A ts package to pipe data to response",
+  "description": "A TypeScript package for streaming data as files (Excel, CSV, JSON) through HTTP responses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -16,12 +16,24 @@
   },
   "keywords": [
     "typescript",
-    "response",
-    "pipe",
-    "data"
+    "file-streaming",
+    "data-export",
+    "excel",
+    "csv",
+    "json",
+    "http-response",
+    "express"
   ],
   "author": "Samit Kapoor",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samitkapoor/file-streamer.git"
+  },
+  "homepage": "https://github.com/samitkapoor/file-streamer#readme",
+  "bugs": {
+    "url": "https://github.com/samitkapoor/file-streamer/issues"
+  },
   "engines": {
     "node": ">=14"
   },
