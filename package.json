@@ -1,6 +1,6 @@
 {
   "name": "file-streamer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A TypeScript package for streaming data as files (Excel, CSV, JSON) through HTTP responses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,15 @@
     "csv",
     "json",
     "http-response",
-    "express"
+    "buffer",
+    "xlsx",
+    "spreadsheet",
+    "download",
+    "streaming",
+    "file-download",
+    "data-streaming",
+    "response-streaming",
+    "file-generation"
   ],
   "author": "Samit Kapoor",
   "license": "MIT",
