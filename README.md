@@ -28,7 +28,7 @@ npm install file-streamer
 Here's a basic example of how to use `file-streamer` with Express.js:
 
 ```typescript
-import { pipeJsonAsExcel } from 'res-pipe';
+import { pipeJsonAsExcel } from 'file-streamer';
 
 // Dummy data for Excel export
 const dummyData = [
