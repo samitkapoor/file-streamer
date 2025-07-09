@@ -1,7 +1,7 @@
 import ExcelJS from 'exceljs';
-import { Data, Response } from '../../types';
+import { JsonData, Response } from '../../types';
 
-export const jsonToExcelBuffer = async (data: Data, sheetName = 'Sheet1') => {
+export const jsonToExcelBuffer = async (data: JsonData, sheetName = 'Sheet1') => {
   const workbook = new ExcelJS.Workbook();
   const worksheet = workbook.addWorksheet(sheetName);
 
@@ -22,7 +22,7 @@ export const jsonToExcelBuffer = async (data: Data, sheetName = 'Sheet1') => {
   return workbook;
 };
 
-export const pipeJsonAsExcel = async (res: Response, data: Data, fileName?: string) => {
+export const pipeJsonAsExcel = async (res: Response, data: JsonData, fileName?: string) => {
   try {
     let responseFileName = !fileName
       ? 'data.xlsx'

@@ -1,6 +1,6 @@
-import { Data, Response } from '../../types';
+import { JsonData, Response } from '../../types';
 
-export const pipeJsonAsJson = async (res: Response, data: Data, fileName?: string) => {
+export const pipeJsonAsJson = async (res: Response, data: JsonData, fileName?: string) => {
   try {
     let responseFileName = !fileName
       ? 'data.json'
