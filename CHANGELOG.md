@@ -5,20 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.2] - 2024-12-26
+## [1.2.0] - 2025-07-10
+
+### Added
+
+- New `pipeFileFromPath` function for streaming files directly from the file system
+- Automatic MIME type detection based on file extensions
+- MIME type utilities (`getContentTypeFromExtension` and `getFileExtensionFromMimeType`)
+- Enhanced ContentType definitions with support for more file formats
+- Proper error handling for file system operations
+- Content-Length header support for better client experience
+
+### Changed
+
+- Enhanced base64 streaming with improved MIME type handling using new utility functions
+- Updated package description to include file system streaming capabilities
+- Added new keywords for better package discoverability (file-system, path-streaming, mime-types, static-files)
+
+### Enhanced
+
+- Better file extension and MIME type mapping for various file formats
+- Improved error handling across all streaming functions
+
+## [1.1.2] - 2025-07-10
 
 ### Changed
 
 - Updated README to include Base64 file streaming support
 
-## [1.1.1] - 2024-12-26
+## [1.1.1] - 2025-07-10
 
 ### Changed
 
 - Updated package description to include Base64 file streaming support
 - Updated package keywords to include Base64 file streaming
 
-## [1.1.0] - 2024-12-26
+## [1.1.0] - 2025-07-10
 
 ### Added
 
@@ -34,13 +56,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced error handling in JSON functions with proper TypeScript error typing
 - Updated function exports to include new base64 module
 
-## [1.0.3] - 2024-12-26
+## [1.0.3] - 2025-07-09
 
 ### Changed
 
 - Enhanced package discoverability by adding more relevant keywords (buffer, xlsx, spreadsheet, download, streaming, file-download, data-streaming, response-streaming, file-generation)
 
-## [1.0.2] - 2024-12-26
+## [1.0.2] - 2025-07-09
 
 ### Added
 
@@ -55,7 +77,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Reorganized Usage section into Backend and Frontend subsections for better clarity
 
-## [1.0.1] - 2024-12-26
+## [1.0.1] - 2025-07-09
 
 ### Added
 
@@ -65,7 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Contributing guidelines
 - Feature comparison table
 
-## [1.0.0] - 2024-12-26
+## [1.0.0] - 2025-07-09
 
 ### Added
 

@@ -1,4 +1,5 @@
 import { Base64Data, ContentType, Response } from '../../types';
+import { getFileExtensionFromMimeType } from '../../utils';
 
 export const pipeBase64 = async (
   res: Response,
@@ -9,47 +10,16 @@ export const pipeBase64 = async (
   try {
     const mimeType = contentType || 'application/octet-stream';
 
-    const getFileExtension = (mimeType: string): string => {
-      const mimeToExtension: { [key: string]: string } = {
-        'image/png': '.png',
-        'image/jpeg': '.jpg',
-        'image/jpg': '.jpg',
-        'image/gif': '.gif',
-        'image/webp': '.webp',
-        'image/svg+xml': '.svg',
-        'application/pdf': '.pdf',
-        'text/plain': '.txt',
-        'text/html': '.html',
-        'text/css': '.css',
-        'text/javascript': '.js',
-        'application/json': '.json',
-        'application/xml': '.xml',
-        'application/zip': '.zip',
-        'application/x-zip-compressed': '.zip',
-        'application/msword': '.doc',
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document': '.docx',
-        'application/vnd.ms-excel': '.xls',
-        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': '.xlsx',
-        'video/mp4': '.mp4',
-        'video/webm': '.webm',
-        'audio/mpeg': '.mp3',
-        'audio/wav': '.wav',
-        'audio/ogg': '.ogg'
-      };
-
-      return mimeToExtension[mimeType.toLowerCase()] || '.bin';
-    };
-
     let responseFileName: string;
     if (fileName) {
       if (fileName.includes('.')) {
         responseFileName = fileName;
       } else {
-        const extension = getFileExtension(mimeType);
+        const extension = getFileExtensionFromMimeType(mimeType);
         responseFileName = `${fileName}${extension}`;
       }
     } else {
-      const extension = getFileExtension(mimeType);
+      const extension = getFileExtensionFromMimeType(mimeType);
       responseFileName = `data${extension}`;
     }
 
