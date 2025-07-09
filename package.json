@@ -1,6 +1,6 @@
 {
   "name": "file-streamer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A TypeScript package for streaming data as files (Excel, CSV, JSON, Base64) through HTTP responses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

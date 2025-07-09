@@ -8,10 +8,10 @@ A developer-friendly NPM package for streaming files directly over HTTP, reducin
 
 ## Key Features
 
--   **Streaming Data:** Efficiently stream data to HTTP responses, reducing memory usage.
--   **Multiple File Types:** Supports Excel (xlsx), CSV, and JSON formats currently.
--   **Express.js Integration:** Designed to work seamlessly with Express.js.
--   **TypeScript Support:** Fully written in TypeScript for type safety and improved developer experience.
+- **Streaming Data:** Efficiently stream data to HTTP responses, reducing memory usage.
+- **Multiple File Types:** Supports Excel (xlsx), CSV, and JSON formats currently.
+- **Express.js Integration:** Designed to work seamlessly with Express.js.
+- **TypeScript Support:** Fully written in TypeScript for type safety and improved developer experience.
 
 ## Installation
 
@@ -95,12 +95,12 @@ You're probably going to use this for downloading a file onto user's machine, he
 
 ## Features
 
-| Function            | Parameters                                  | Description                                                                                                |
-| ------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `pipeJsonAsExcel` | `res: express.Response`, `jsonData: any`, `filename?: string` | Pipes JSON data to an Excel file and streams it as an HTTP response. |
-| `pipeJsonAsCsv` | `res: express.Response`, `jsonData: any`, `filename?: string` | Pipes JSON data to a CSV string and streams it as an HTTP response. |
-| `pipeJsonAsJson` | `res: express.Response`, `jsonData: any`, `filename?: string` | Pipes JSON data to a JSON string and streams it as an HTTP response. |
-
+| Function          | Parameters                                                                                 | Description                                                          |
+| ----------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| `pipeJsonAsExcel` | `res: express.Response`, `jsonData: any`, `filename?: string`                              | Pipes JSON data to an Excel file and streams it as an HTTP response. |
+| `pipeJsonAsCsv`   | `res: express.Response`, `jsonData: any`, `filename?: string`                              | Pipes JSON data to a CSV string and streams it as an HTTP response.  |
+| `pipeJsonAsJson`  | `res: express.Response`, `jsonData: any`, `filename?: string`                              | Pipes JSON data to a JSON string and streams it as an HTTP response. |
+| `pipeBase64`      | `res: express.Response`, `base64Data: string`, `contentType?: string`, `filename?: string` | Pipes base64 data to a file and streams it as an HTTP response.      |
 
 ## Contributing
 
@@ -108,9 +108,9 @@ Contributions are welcome! Please follow these steps:
 
 1.  Raise an issue/feature request and get assigned to it.
 1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and ensure they are well-tested.
-4.  Submit a pull request with a clear description of your changes.
+1.  Create a new branch for your feature or bug fix.
+1.  Make your changes and ensure they are well-tested.
+1.  Submit a pull request with a clear description of your changes.
 
 ## License
 
